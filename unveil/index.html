@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNVEIL — The Science Behind 222nm Far-UVC | ERGO HealthTech</title>
+  <meta name="description" content="ERGO HealthTech's UNVEIL section: the world's first dual-version public science statement on 222nm Far-UVC, plus 19 expert Q&As. Written for everyone. Backed by peer-reviewed research." />
+  <meta property="og:title" content="UNVEIL — The Science Behind 222nm Far-UVC | ERGO HealthTech" />
+  <meta property="og:description" content="The world's first dual-version public science statement on 222nm Far-UVC. Written for everyone from primary school students to clinical researchers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ergo-healthtech.com/unveil/" />
+  <meta property="og:image" content="https://www.ergo-healthtech.com/assets/og-image.jpg" />
+  <link rel="canonical" href="https://www.ergo-healthtech.com/unveil/" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0A1628; --teal: #00B4C6; --teal-light: #e6f9fb;
+      --teal-dark: #008fa0; --white: #ffffff; --gray-light: #f5f7fa;
+      --gray-mid: #e2e8f0; --text: #1a202c; --text-muted: #4a5568;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.7; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy); padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    }
+    .nav-logo { color: var(--white); font-size: 18px; font-weight: 800; text-decoration: none; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 8px 12px; border-radius: 6px; transition: all 0.15s; }
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+    .nav-links .nav-unveil { color: var(--teal); font-weight: 700; border: 1px solid rgba(0,180,198,0.3); }
+    .nav-links .nav-cta { background: var(--teal); color: var(--white) !important; border-radius: 20px !important; padding: 8px 18px !important; font-weight: 700 !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); margin: 5px 0; border-radius: 2px; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 16px; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: block; }
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--navy); padding: 80px 24px 72px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(0,180,198,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-tag {
+      display: inline-block; background: rgba(0,180,198,0.15); color: var(--teal);
+      font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(0,180,198,0.3); margin-bottom: 24px;
+    }
+    .hero h1 { color: var(--white); font-size: clamp(32px, 6vw, 60px); font-weight: 800; line-height: 1.1; margin-bottom: 16px; letter-spacing: -1px; }
+    .hero h1 span { color: var(--teal); }
+    .hero p { color: #94a3b8; font-size: clamp(15px, 2vw, 18px); max-width: 580px; margin: 0 auto 16px; line-height: 1.7; }
+    .hero-sub { color: #64748b; font-size: 13px; margin-bottom: 40px; }
+
+    /* CARDS */
+    .cards-section { padding: 72px 24px; }
+    .cards-inner { max-width: 860px; margin: 0 auto; }
+    .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px; }
+    .unveil-card {
+      border-radius: 20px; overflow: hidden;
+      border: 1px solid var(--gray-mid);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none; display: block;
+    }
+    .unveil-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.12); }
+    .card-header { padding: 32px 28px 24px; }
+    .card-header.science { background: var(--navy); }
+    .card-header.faq { background: linear-gradient(135deg, #1a0a35, #0a1628); }
+    .card-icon { font-size: 48px; display: block; margin-bottom: 16px; }
+    .card-tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; display: block; }
+    .card-header.science .card-tag { color: var(--teal); }
+    .card-header.faq .card-tag { color: #c4b5fd; }
+    .card-header h2 { font-size: clamp(18px, 2.5vw, 22px); font-weight: 800; line-height: 1.25; }
+    .card-header.science h2 { color: var(--white); }
+    .card-header.faq h2 { color: var(--white); }
+    .card-body { padding: 24px 28px 28px; background: var(--white); }
+    .card-body p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+    .card-features { list-style: none; padding: 0; margin-bottom: 24px; }
+    .card-features li { font-size: 13px; color: var(--text-muted); padding: 5px 0; padding-left: 18px; position: relative; }
+    .card-features li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; font-size: 12px; }
+    .card-cta {
+      display: inline-block; padding: 12px 24px; border-radius: 24px;
+      font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.2s;
+    }
+    .card-cta.science-cta { background: var(--teal); color: var(--white); }
+    .card-cta.science-cta:hover { background: var(--teal-dark); }
+    .card-cta.faq-cta { background: #7c3aed; color: var(--white); }
+    .card-cta.faq-cta:hover { background: #6d28d9; }
+
+    /* WHY SECTION */
+    .why-section { background: var(--gray-light); padding: 72px 24px; }
+    .why-inner { max-width: 860px; margin: 0 auto; }
+    .why-inner h2 { font-size: clamp(20px, 3vw, 28px); font-weight: 800; color: var(--navy); margin-bottom: 12px; }
+    .why-inner .sub { font-size: 15px; color: var(--text-muted); margin-bottom: 40px; max-width: 560px; line-height: 1.7; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .why-card { background: var(--white); border-radius: 12px; padding: 20px; border: 1px solid var(--gray-mid); }
+    .why-card .icon { font-size: 28px; margin-bottom: 10px; }
+    .why-card h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .why-card p { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+    footer { background: var(--navy); padding: 32px 24px; text-align: center; }
+    footer p { color: #475569; font-size: 13px; }
+    footer a { color: var(--teal); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../index.html">ERGO<span>.</span>HealthTech</a>
+  <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="../products.html">Products</a>
+    <a href="../solutions.html">Solutions</a>
+    <a href="index.html" class="nav-unveil">UNVEIL</a>
+    <a href="../resources.html">Resources</a>
+    <a href="../about.html">About</a>
+    <a href="../support.html">Support</a>
+    <a href="https://shop.ergo-healthtech.com" target="_blank" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">ERGO HealthTech — Science Communication</div>
+  <h1><span>UNVEIL</span></h1>
+  <p>The world's first dual-version public science statement on 222nm Far-UVC technology.</p>
+  <p class="hero-sub">Written for primary school students. Verified by clinical researchers. Backed by 12 peer-reviewed studies.</p>
+</section>
+
+<section class="cards-section">
+  <div class="cards-inner">
+    <div class="cards-grid">
+
+      <a href="science.html" class="unveil-card">
+        <div class="card-header science">
+          <span class="card-icon">🔬</span>
+          <span class="card-tag">Full Science Statement</span>
+          <h2>The Science Behind 222nm Far-UVC Defense</h2>
+        </div>
+        <div class="card-body">
+          <p>A comprehensive three-part science statement on viruses, vaccines, and 222nm Far-UVC. Choose your reading level — plain English or academic.</p>
+          <ul class="card-features">
+            <li>Toggle between Plain English and Academic & Clinical versions</li>
+            <li>Real-world efficacy data (2025–2026)</li>
+            <li>Hong Kong vaccination coverage statistics</li>
+            <li>The DIP equivalence breakthrough explained</li>
+            <li>Three-layer synergistic defense matrix</li>
+            <li>12 peer-reviewed references with hyperlinks</li>
+          </ul>
+          <span class="card-cta science-cta">Read the Science →</span>
+        </div>
+      </a>
+
+      <a href="faq.html" class="unveil-card">
+        <div class="card-header faq">
+          <span class="card-icon">💬</span>
+          <span class="card-tag">19 Questions Answered</span>
+          <h2>Airborne Viruses & 222nm Far-UVC: Your Questions Answered</h2>
+        </div>
+        <div class="card-body">
+          <p>19 expert questions across 6 topics — from what a virus actually is to why 222nm light cannot harm your eyes. Click any question to reveal the full answer.</p>
+          <ul class="card-features">
+            <li>Written for everyone — no science degree required</li>
+            <li>Vivid analogies that make complex science click</li>
+            <li>Real Hong Kong deployment evidence</li>
+            <li>Why traditional methods are passive — and what changes that</li>
+            <li>Hard safety data: 479 mJ/cm² skin limit, 600 mJ/cm² corneal tolerance</li>
+            <li>6 key references with DOI hyperlinks</li>
+          </ul>
+          <span class="card-cta faq-cta">Read the FAQ →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="why-inner">
+    <h2>Why ERGO Published This</h2>
+    <p class="sub">Most competitors present 222nm Far-UVC in technical terms that most people cannot follow. We believe everyone deserves to understand the science that protects them.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">👧</div>
+        <h4>For Everyone</h4>
+        <p>Written so a primary school student and a hospital procurement officer both walk away understanding the same core truth.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🎓</div>
+        <h4>Academically Verified</h4>
+        <p>Every claim is backed by peer-reviewed literature from Columbia University, HKU, HKUST, and leading global research institutions.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🤖</div>
+        <h4>AI-Optimized</h4>
+        <p>Both pages carry full JSON-LD structured data, DOI citation links, and canonical tags so AI assistants like Perplexity and ChatGPT can cite them directly.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🌍</div>
+        <h4>A First for the Industry</h4>
+        <p>No other company in the 222nm Far-UVC industry has published a dual-version public science statement of this depth and accessibility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 <a href="../index.html">ERGO HealthTech Ltd.</a> &nbsp;|&nbsp; <a href="../index.html">Home</a> &nbsp;|&nbsp; <a href="science.html">The Science</a> &nbsp;|&nbsp; <a href="faq.html">FAQ</a> &nbsp;|&nbsp; <a href="mailto:cs@ergo-healthtech.com">cs@ergo-healthtech.com</a></p>
+</footer>
+
+</body>
+</html>
