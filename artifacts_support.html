@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support & Contact | ERGO HealthTech</title>
+  <meta name="description" content="Contact ERGO HealthTech for product enquiries, corporate offers, distributor applications, technical support, and investment opportunities." />
+  <link rel="canonical" href="https://www.ergo-healthtech.com/support" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0A1628; --teal: #00B4C6; --teal-dark: #008fa0;
+      --white: #ffffff; --gray-light: #f5f7fa; --gray-mid: #e2e8f0;
+      --text: #1a202c; --text-muted: #4a5568;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 16px rgba(0,0,0,0.3); }
+    .nav-logo { color: var(--white); font-size: 18px; font-weight: 800; text-decoration: none; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 8px 12px; border-radius: 6px; transition: all 0.15s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); background: rgba(255,255,255,0.1); }
+    .nav-links .nav-unveil { color: var(--teal); font-weight: 700; border: 1px solid rgba(0,180,198,0.3); }
+    .nav-links .nav-cta { background: var(--teal); color: var(--white) !important; border-radius: 20px !important; padding: 8px 18px !important; font-weight: 700 !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); margin: 5px 0; border-radius: 2px; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 16px; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: block; }
+    }
+    .page-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .page-hero .tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: block; }
+    .page-hero h1 { color: var(--white); font-size: clamp(24px, 4vw, 40px); font-weight: 800; margin-bottom: 12px; }
+    .page-hero p { color: #94a3b8; font-size: 16px; max-width: 560px; margin: 0 auto; }
+    .content { max-width: 960px; margin: 0 auto; padding: 64px 24px 80px; }
+
+    /* CONTACT CARDS */
+    .contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 64px; }
+    .contact-card { background: var(--navy); border-radius: 14px; padding: 24px; text-align: center; }
+    .contact-card .icon { font-size: 36px; margin-bottom: 12px; display: block; }
+    .contact-card h3 { color: var(--teal); font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .contact-card a, .contact-card p { color: var(--white); font-size: 14px; text-decoration: none; line-height: 1.5; }
+    .contact-card a:hover { color: var(--teal); }
+
+    /* ENQUIRY TYPES */
+    .enquiry-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 56px; }
+    .enquiry-card { border: 1px solid var(--gray-mid); border-radius: 14px; padding: 24px; transition: box-shadow 0.2s; }
+    .enquiry-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .enquiry-card .e-icon { font-size: 28px; margin-bottom: 10px; display: block; }
+    .enquiry-card h3 { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .enquiry-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
+    .enquiry-card a { display: inline-block; background: var(--teal); color: var(--white); padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.15s; }
+    .enquiry-card a:hover { background: var(--teal-dark); }
+    .enquiry-card a.outline { background: transparent; color: var(--navy); border: 1px solid var(--gray-mid); }
+    .enquiry-card a.outline:hover { border-color: var(--teal); color: var(--teal); background: transparent; }
+
+    /* FORM */
+    .form-section h2 { font-size: clamp(20px, 3vw, 26px); font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .form-section p { font-size: 15px; color: var(--text-muted); margin-bottom: 28px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-row { margin-bottom: 16px; }
+    .form-row.full { grid-column: 1 / -1; }
+    .form-row label { display: block; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 5px; }
+    .form-row input, .form-row select, .form-row textarea {
+      width: 100%; padding: 11px 14px;
+      border: 1px solid var(--gray-mid); border-radius: 8px;
+      font-family: var(--font); font-size: 14px;
+      background: var(--white); color: var(--text);
+      transition: border-color 0.15s;
+    }
+    .form-row input:focus, .form-row select:focus, .form-row textarea:focus { outline: none; border-color: var(--teal); }
+    .form-row textarea { resize: vertical; min-height: 120px; }
+    .form-submit { background: var(--teal); color: var(--white); border: none; padding: 13px 32px; border-radius: 24px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: var(--font); transition: background 0.15s; }
+    .form-submit:hover { background: var(--teal-dark); }
+
+    footer { background: var(--navy); padding: 32px 24px; text-align: center; }
+    footer p { color: #475569; font-size: 13px; }
+    footer a { color: var(--teal); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .form-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">ERGO<span>.</span>HealthTech</a>
+  <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="products.html">Products</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="unveil/index.html" class="nav-unveil">UNVEIL</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html" class="active">Support</a>
+    <a href="https://shop.ergo-healthtech.com" target="_blank" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="tag">Support & Contact</span>
+  <h1>We're Here to Help</h1>
+  <p>Product enquiries, corporate offers, distributor applications, technical support, or investment — reach the right team directly.</p>
+</div>
+
+<div class="content">
+
+  <!-- CONTACT CARDS -->
+  <div class="contact-cards">
+    <div class="contact-card">
+      <span class="icon">💬</span>
+      <h3>WhatsApp</h3>
+      <a href="https://wa.me/85260876138" target="_blank">+852 6087 6138</a>
+    </div>
+    <div class="contact-card">
+      <span class="icon">✉️</span>
+      <h3>Email</h3>
+      <a href="mailto:cs@ergo-healthtech.com">cs@ergo-healthtech.com</a>
+    </div>
+    <div class="contact-card">
+      <span class="icon">📍</span>
+      <h3>Address</h3>
+      <p>HKSTP Pak Shek Kok<br/>Sha Tin, Hong Kong</p>
+    </div>
+    <div class="contact-card">
+      <span class="icon">🛍️</span>
+      <h3>Online Store</h3>
+      <a href="https://shop.ergo-healthtech.com" target="_blank">shop.ergo-healthtech.com</a>
+    </div>
+  </div>
+
+  <!-- ENQUIRY TYPES -->
+  <div class="enquiry-grid">
+    <div class="enquiry-card">
+      <span class="e-icon">📦</span>
+      <h3>Product Enquiry</h3>
+      <p>Questions about specifications, compatibility, installation, or which product suits your space.</p>
+      <a href="mailto:cs@ergo-healthtech.com?subject=Product Enquiry">Email Us</a>
+    </div>
+    <div class="enquiry-card">
+      <span class="e-icon">🏢</span>
+      <h3>Corporate Offer</h3>
+      <p>Multi-unit or enterprise deployment enquiries for hospitals, hotels, schools, government facilities, and commercial properties.</p>
+      <a href="mailto:cs@ergo-healthtech.com?subject=Corporate Offer Enquiry">Email Us</a>
+    </div>
+    <div class="enquiry-card">
+      <span class="e-icon">🤝</span>
+      <h3>Business Collaboration</h3>
+      <p>Partnership, co-branding, integration, and business development opportunities with ERGO HealthTech.</p>
+      <a href="mailto:cs@ergo-healthtech.com?subject=Business Collaboration">Email Us</a>
+    </div>
+    <div class="enquiry-card">
+      <span class="e-icon">🌍</span>
+      <h3>Distributor Application</h3>
+      <p>Apply to join the ERGO HealthTech global distributor programme. Applications reviewed within 1–2 weeks.</p>
+      <a href="https://shop.ergo-healthtech.com/apply-distributor" target="_blank">Apply Now</a>
+    </div>
+    <div class="enquiry-card">
+      <span class="e-icon">🔧</span>
+      <h3>Technical Support</h3>
+      <p>Installation guidance, product troubleshooting, firmware updates, and warranty claims.</p>
+      <a href="mailto:cs@ergo-healthtech.com?subject=Technical Support">Email Us</a>
+    </div>
+    <div class="enquiry-card">
+      <span class="e-icon">💰</span>
+      <h3>Investment</h3>
+      <p>Investment enquiries and investor relations for ERGO HealthTech Ltd.</p>
+      <a href="mailto:cs@ergo-healthtech.com?subject=Investment Enquiry">Email Us</a>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-section">
+    <h2>Send a Direct Enquiry</h2>
+    <p>Fill in the form and we will get back to you within 1 business day.</p>
+    <form action="mailto:cs@ergo-healthtech.com" method="post" enctype="text/plain">
+      <div class="form-grid">
+        <div class="form-row">
+          <label>Full Name *</label>
+          <input type="text" name="name" placeholder="Your full name" required />
+        </div>
+        <div class="form-row">
+          <label>Email Address *</label>
+          <input type="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-row">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" name="phone" placeholder="+852 xxxx xxxx" />
+        </div>
+        <div class="form-row">
+          <label>Enquiry Type *</label>
+          <select name="type" required>
+            <option value="">Select enquiry type</option>
+            <option>Product Enquiry</option>
+            <option>Corporate Offer</option>
+            <option>Business Collaboration</option>
+            <option>Distributor Application</option>
+            <option>Technical Support</option>
+            <option>Investment</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Company / Organisation</label>
+          <input type="text" name="company" placeholder="Your company name" />
+        </div>
+        <div class="form-row">
+          <label>Country / Region</label>
+          <input type="text" name="country" placeholder="e.g. Hong Kong" />
+        </div>
+        <div class="form-row full">
+          <label>Message *</label>
+          <textarea name="message" placeholder="Tell us about your needs, your space, or your question..." required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="form-submit">Send Enquiry</button>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="index.html">ERGO HealthTech Ltd.</a> &nbsp;|&nbsp;
+  <a href="products.html">Products</a> &nbsp;|&nbsp;
+  <a href="unveil/index.html">UNVEIL</a> &nbsp;|&nbsp;
+  <a href="mailto:cs@ergo-healthtech.com">cs@ergo-healthtech.com</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions — B2B, B2B2C & B2C | ERGO HealthTech</title>
+  <meta name="description" content="ERGO HealthTech delivers 222nm Far-UVC solutions across B2B enterprise, B2B2C distribution, and B2C personal protection. Every human-occupied space covered." />
+  <link rel="canonical" href="https://www.ergo-healthtech.com/solutions" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0A1628; --teal: #00B4C6; --teal-dark: #008fa0;
+      --white: #ffffff; --gray-light: #f5f7fa; --gray-mid: #e2e8f0;
+      --text: #1a202c; --text-muted: #4a5568;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 16px rgba(0,0,0,0.3); }
+    .nav-logo { color: var(--white); font-size: 18px; font-weight: 800; text-decoration: none; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 8px 12px; border-radius: 6px; transition: all 0.15s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); background: rgba(255,255,255,0.1); }
+    .nav-links .nav-unveil { color: var(--teal); font-weight: 700; border: 1px solid rgba(0,180,198,0.3); }
+    .nav-links .nav-cta { background: var(--teal); color: var(--white) !important; border-radius: 20px !important; padding: 8px 18px !important; font-weight: 700 !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); margin: 5px 0; border-radius: 2px; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 16px; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: block; }
+    }
+    .page-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .page-hero .tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: block; }
+    .page-hero h1 { color: var(--white); font-size: clamp(24px, 4vw, 40px); font-weight: 800; margin-bottom: 12px; }
+    .page-hero p { color: #94a3b8; font-size: 16px; max-width: 580px; margin: 0 auto; }
+    .content { max-width: 1000px; margin: 0 auto; padding: 64px 24px 80px; }
+
+    /* SOLUTION BLOCKS */
+    .solution-block { margin-bottom: 72px; }
+    .solution-header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 2px solid var(--gray-mid); }
+    .solution-header .s-icon { font-size: 36px; }
+    .solution-header .s-type { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; display: block; }
+    .solution-header.b2b .s-type { color: var(--teal); }
+    .solution-header.b2b2c .s-type { color: #7c3aed; }
+    .solution-header.b2c .s-type { color: #059669; }
+    .solution-header h2 { font-size: clamp(20px, 3vw, 26px); font-weight: 800; color: var(--navy); }
+    .solution-desc { font-size: 15px; color: var(--text-muted); line-height: 1.75; max-width: 720px; margin-bottom: 32px; }
+
+    .verticals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .vertical-card { background: var(--gray-light); border-radius: 12px; padding: 20px; border: 1px solid var(--gray-mid); }
+    .vertical-card .v-icon { font-size: 28px; margin-bottom: 10px; display: block; }
+    .vertical-card h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .vertical-card p { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+    .solution-cta { display: inline-block; padding: 12px 28px; border-radius: 24px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.2s; }
+    .solution-cta.teal { background: var(--teal); color: var(--white); }
+    .solution-cta.teal:hover { background: var(--teal-dark); }
+    .solution-cta.purple { background: #7c3aed; color: var(--white); }
+    .solution-cta.purple:hover { background: #6d28d9; }
+    .solution-cta.green { background: #059669; color: var(--white); }
+    .solution-cta.green:hover { background: #047857; }
+
+    /* DISTRIBUTOR TABLE */
+    .dist-table-wrap { overflow-x: auto; margin: 24px 0; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead tr { background: var(--navy); color: var(--white); }
+    thead th { padding: 14px 16px; text-align: left; font-weight: 600; }
+    tbody tr:nth-child(even) { background: var(--gray-light); }
+    tbody tr:nth-child(odd) { background: var(--white); }
+    tbody td { padding: 12px 16px; border-bottom: 1px solid var(--gray-mid); font-size: 14px; }
+    tbody tr:last-child td { border-bottom: none; }
+
+    footer { background: var(--navy); padding: 32px 24px; text-align: center; }
+    footer p { color: #475569; font-size: 13px; }
+    footer a { color: var(--teal); text-decoration: none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">ERGO<span>.</span>HealthTech</a>
+  <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="products.html">Products</a>
+    <a href="solutions.html" class="active">Solutions</a>
+    <a href="unveil/index.html" class="nav-unveil">UNVEIL</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Support</a>
+    <a href="https://shop.ergo-healthtech.com" target="_blank" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="tag">Who We Serve</span>
+  <h1>Solutions for Every Human-Occupied Space</h1>
+  <p>B2B enterprise deployments, B2B2C global distribution, and B2C personal protection. If people breathe there, our technology protects them.</p>
+</div>
+
+<div class="content">
+
+  <!-- B2B -->
+  <div class="solution-block">
+    <div class="solution-header b2b">
+      <div class="s-icon">🏢</div>
+      <div>
+        <span class="s-type">B2B — Enterprise</span>
+        <h2>Business & Institutional Deployment</h2>
+      </div>
+    </div>
+    <p class="solution-desc">ERGO HealthTech provides full-scale 222nm Far-UVC germicidal deployment for organisations managing occupant health across multiple spaces and high-footfall environments. From single-room installations to campus-wide systems, we deliver turnkey solutions with technical support, commissioning, and ongoing maintenance guidance.</p>
+    <div class="verticals-grid">
+      <div class="vertical-card">
+        <span class="v-icon">🏥</span>
+        <h4>Hospitals & Clinics</h4>
+        <p>Deployed across Hospital Authority networks, public and private clinics, and elderly residential care facilities managed by TWGHs and Po Leung Kuk.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">✈️</span>
+        <h4>Airports & Transport</h4>
+        <p>Active inside Hong Kong International Airport and metro stations. ERGOGate deployed at immigration and passenger checkpoints.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">🏨</span>
+        <h4>Hotels & Hospitality</h4>
+        <p>Lobby, lift, restaurant, and room protection. ERGOGate and M1 Pro deployed across premier hotel properties.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">🏫</span>
+        <h4>Schools & Universities</h4>
+        <p>Classroom, corridor, and canteen protection. Commissioned by the LCSD and deployed across school networks in Hong Kong.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">🏛️</span>
+        <h4>Government Facilities</h4>
+        <p>Deployed by the Hong Kong Police Force, LCSD, and EMSD — which launched 222nm lift sterilization frameworks in 2020.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">🛍️</span>
+        <h4>Retail & Commercial</h4>
+        <p>Active inside premier retail shopping malls, commercial office high-rises, and residential clubhouses throughout Hong Kong.</p>
+      </div>
+    </div>
+    <a href="support.html" class="solution-cta teal">Request a Corporate Consultation</a>
+  </div>
+
+  <!-- B2B2C -->
+  <div class="solution-block">
+    <div class="solution-header b2b2c">
+      <div class="s-icon">🌍</div>
+      <div>
+        <span class="s-type">B2B2C — Global Distribution</span>
+        <h2>Distributor & Reseller Programme</h2>
+      </div>
+    </div>
+    <p class="solution-desc">ERGO HealthTech operates a structured global distributor programme. With over 20 customizable SKUs, OEM and co-branding options, and a dedicated technical support framework, we equip distributors to serve their local markets with world-class 222nm Far-UVC technology. Applications are reviewed within 1–2 weeks.</p>
+
+    <div class="dist-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Programme Benefit</th>
+            <th>Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Product Range</td><td>20+ customizable SKUs across portable, spatial, entrance, and chemical categories</td></tr>
+          <tr><td>OEM Options</td><td>Custom branding and co-branding available on selected products</td></tr>
+          <tr><td>Technical Support</td><td>Full product training, commissioning guidance, and ongoing technical assistance</td></tr>
+          <tr><td>Science Collateral</td><td>Access to the UNVEIL science statement, FAQ, and peer-reviewed research materials</td></tr>
+          <tr><td>Marketing Support</td><td>Product photography, specification sheets, and sales materials provided</td></tr>
+          <tr><td>Application Review</td><td>All distributor applications reviewed within 1–2 weeks</td></tr>
+          <tr><td>Territory</td><td>Global — exclusive and non-exclusive territory arrangements available</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <a href="https://shop.ergo-healthtech.com/apply-distributor" class="solution-cta purple" target="_blank">Apply to Become a Distributor</a>
+  </div>
+
+  <!-- B2C -->
+  <div class="solution-block">
+    <div class="solution-header b2c">
+      <div class="s-icon">👤</div>
+      <div>
+        <span class="s-type">B2C — Personal Protection</span>
+        <h2>Personal & Home Protection</h2>
+      </div>
+    </div>
+    <p class="solution-desc">For individuals who want active germicidal protection wherever they go. From the world's smallest portable 222nm sterilizer to Germany's top-certified disinfectant, ERGO HealthTech brings professional-grade protection into everyday life — at home, in the car, and on the move.</p>
+    <div class="verticals-grid">
+      <div class="vertical-card">
+        <span class="v-icon">🛡️</span>
+        <h4>X ONE Personal Sterilizer</h4>
+        <p>The world's smallest portable 222nm Far-UVC sterilizer. 1-metre personal protection zone. Under 1 second to inactivate COVID-19.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">🧴</span>
+        <h4>ecodis Disinfectant</h4>
+        <p>Germany's No. 1 certified active chlorine disinfectant. 99.99% kill rate. Non-toxic and non-flammable. For surfaces, hands, and food contact areas.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">🚗</span>
+        <h4>AIRIE In-Car Air Purifier</h4>
+        <p>H13 HEPA + activated carbon + TiO₂ + 254nm UVC. 99.97% particle capture. Designed for cars, taxis, and ride-sharing vehicles.</p>
+      </div>
+      <div class="vertical-card">
+        <span class="v-icon">✈️</span>
+        <h4>Smart Traveller Partnership</h4>
+        <p>ERGO HealthTech products are available through the Smart Traveller programme for frequent travellers and expats.</p>
+      </div>
+    </div>
+    <a href="https://shop.ergo-healthtech.com" class="solution-cta green" target="_blank">Shop Personal Protection</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="index.html">ERGO HealthTech Ltd.</a> &nbsp;|&nbsp;
+  <a href="products.html">Products</a> &nbsp;|&nbsp;
+  <a href="unveil/index.html">UNVEIL</a> &nbsp;|&nbsp;
+  <a href="mailto:cs@ergo-healthtech.com">cs@ergo-healthtech.com</a></p>
+</footer>
+</body>
+</html>

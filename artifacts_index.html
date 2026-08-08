@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERGO HealthTech — 222nm Far-UVC Germicidal Solutions | Hong Kong</title>
+  <meta name="description" content="ERGO HealthTech delivers 222nm Far-UVC germicidal solutions for every human-occupied space. Safe for continuous human exposure. Proven by peer-reviewed science." />
+  <meta name="keywords" content="222nm Far-UVC, germicidal solutions, indoor air quality, ERGO HealthTech, Hong Kong, ERGOSHIELD, X ONE, airborne pathogen control" />
+  <meta property="og:title" content="ERGO HealthTech — 222nm Far-UVC Germicidal Solutions" />
+  <meta property="og:description" content="ERGO HealthTech delivers 222nm Far-UVC germicidal solutions for every human-occupied space. Safe for continuous human exposure. Proven by peer-reviewed science." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ergo-healthtech.com" />
+  <meta property="og:image" content="https://www.ergo-healthtech.com/assets/og-image.jpg" />
+  <link rel="canonical" href="https://www.ergo-healthtech.com" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ERGO HealthTech Ltd.",
+    "url": "https://www.ergo-healthtech.com",
+    "logo": "https://www.ergo-healthtech.com/assets/logo.png",
+    "description": "ERGO HealthTech delivers 222nm Far-UVC germicidal solutions for every human-occupied space, headquartered at HKSTP, Hong Kong.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "HKSTP Pak Shek Kok",
+      "addressLocality": "Sha Tin",
+      "addressRegion": "Hong Kong"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+852-6087-6138",
+      "email": "cs@ergo-healthtech.com",
+      "contactType": "Customer Service"
+    },
+    "sameAs": [
+      "https://twitter.com/ERGO_HealthTech",
+      "https://www.instagram.com/ergo_healthtech/",
+      "https://www.facebook.com/ERGO.HT/",
+      "https://www.linkedin.com/company/ergo-healthtech/",
+      "https://www.youtube.com/channel/UC98p0DhkbGabGzy5Z-duWZQ"
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0A1628;
+      --teal: #00B4C6;
+      --teal-light: #e6f9fb;
+      --teal-dark: #008fa0;
+      --white: #ffffff;
+      --gray-light: #f5f7fa;
+      --gray-mid: #e2e8f0;
+      --text: #1a202c;
+      --text-muted: #4a5568;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.7; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    }
+    .nav-logo {
+      color: var(--white); font-size: 18px; font-weight: 800;
+      text-decoration: none; letter-spacing: -0.5px;
+    }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      font-size: 13px; font-weight: 600; padding: 8px 12px;
+      border-radius: 6px; transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+    .nav-links a.active { color: var(--teal); }
+    .nav-links .nav-unveil {
+      color: var(--teal); font-weight: 700;
+      border: 1px solid rgba(0,180,198,0.3);
+    }
+    .nav-links .nav-unveil:hover { background: rgba(0,180,198,0.1); }
+    .nav-cta {
+      background: var(--teal); color: var(--white) !important;
+      border-radius: 20px !important; padding: 8px 18px !important;
+      font-weight: 700 !important;
+    }
+    .nav-cta:hover { background: var(--teal-dark) !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); margin: 5px 0; border-radius: 2px; transition: 0.3s; }
+
+    /* MOBILE NAV */
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 16px; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: block; }
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--navy);
+      padding: 80px 24px 72px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(0,180,198,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: rgba(0,180,198,0.15);
+      color: var(--teal);
+      font-size: 12px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; padding: 6px 16px;
+      border-radius: 20px; border: 1px solid rgba(0,180,198,0.3);
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      color: var(--white);
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 800; line-height: 1.15;
+      max-width: 780px; margin: 0 auto 20px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span { color: var(--teal); }
+    .hero p {
+      color: #94a3b8; font-size: clamp(15px, 2vw, 18px);
+      max-width: 600px; margin: 0 auto 36px; line-height: 1.7;
+    }
+    .hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--teal); color: var(--white);
+      padding: 14px 32px; border-radius: 30px;
+      font-weight: 700; font-size: 15px;
+      text-decoration: none; transition: all 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent; color: var(--white);
+      padding: 14px 32px; border-radius: 30px;
+      font-weight: 600; font-size: 15px;
+      text-decoration: none; transition: all 0.2s;
+      border: 1px solid rgba(255,255,255,0.3);
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--teal); color: var(--teal); }
+
+    /* STATS BAR */
+    .stats-bar {
+      background: var(--teal);
+      padding: 20px 24px;
+    }
+    .stats-inner {
+      max-width: 1000px; margin: 0 auto;
+      display: flex; justify-content: space-around;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: clamp(20px, 3vw, 28px); font-weight: 800; color: var(--white); line-height: 1; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 4px; font-weight: 600; }
+
+    /* SECTIONS */
+    section { padding: 72px 24px; }
+    .section-inner { max-width: 1000px; margin: 0 auto; }
+    .section-tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--teal); margin-bottom: 12px;
+    }
+    h2.section-title {
+      font-size: clamp(22px, 3.5vw, 36px); font-weight: 800;
+      color: var(--navy); margin-bottom: 16px; line-height: 1.2;
+    }
+    .section-sub {
+      font-size: 16px; color: var(--text-muted);
+      max-width: 600px; margin-bottom: 48px; line-height: 1.7;
+    }
+
+    /* HOW IT WORKS */
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px; margin-top: 48px;
+    }
+    .how-card {
+      background: var(--navy); border-radius: 14px;
+      padding: 28px 24px; text-align: center;
+    }
+    .how-icon { font-size: 40px; margin-bottom: 14px; display: block; }
+    .how-card h3 { color: var(--white); font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .how-card p { color: #94a3b8; font-size: 14px; line-height: 1.6; }
+
+    /* PRODUCTS */
+    .products-bg { background: var(--gray-light); }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .product-card {
+      background: var(--white); border-radius: 14px;
+      padding: 28px 24px; border: 1px solid var(--gray-mid);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .product-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.1); transform: translateY(-2px); }
+    .product-tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--teal);
+      margin-bottom: 10px; display: block;
+    }
+    .product-card h3 { font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .product-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+    .product-link {
+      color: var(--teal); font-size: 13px; font-weight: 700;
+      text-decoration: none;
+    }
+    .product-link:hover { text-decoration: underline; }
+    .badge-oos {
+      display: inline-block; background: #fff3cd;
+      color: #856404; font-size: 11px; font-weight: 700;
+      padding: 3px 10px; border-radius: 10px; margin-left: 8px;
+    }
+
+    /* SOLUTIONS */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .solution-card {
+      border-radius: 14px; padding: 28px 24px;
+      border: 1px solid var(--gray-mid);
+    }
+    .solution-card.b2b { border-top: 4px solid var(--teal); }
+    .solution-card.b2b2c { border-top: 4px solid #7c3aed; }
+    .solution-card.b2c { border-top: 4px solid #059669; }
+    .solution-card h3 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .solution-card .s-type {
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; margin-bottom: 12px; display: block;
+    }
+    .solution-card.b2b .s-type { color: var(--teal); }
+    .solution-card.b2b2c .s-type { color: #7c3aed; }
+    .solution-card.b2c .s-type { color: #059669; }
+    .solution-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
+    .solution-card ul { list-style: none; padding: 0; }
+    .solution-card ul li {
+      font-size: 13px; color: var(--text-muted);
+      padding: 4px 0; padding-left: 16px; position: relative;
+    }
+    .solution-card ul li::before { content: '→'; position: absolute; left: 0; color: var(--teal); font-size: 11px; top: 5px; }
+
+    /* UNVEIL BANNER */
+    .unveil-banner {
+      background: var(--navy);
+      border-radius: 20px;
+      padding: 48px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 32px; flex-wrap: wrap;
+    }
+    .unveil-banner h2 { color: var(--white); font-size: clamp(20px, 3vw, 28px); font-weight: 800; margin-bottom: 10px; }
+    .unveil-banner h2 span { color: var(--teal); }
+    .unveil-banner p { color: #94a3b8; font-size: 15px; max-width: 520px; line-height: 1.6; }
+    .unveil-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+    .unveil-links a {
+      display: inline-block; padding: 12px 24px;
+      border-radius: 24px; font-size: 14px; font-weight: 700;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .unveil-links a.primary { background: var(--teal); color: var(--white); }
+    .unveil-links a.primary:hover { background: var(--teal-dark); }
+    .unveil-links a.secondary { border: 1px solid rgba(255,255,255,0.25); color: var(--white); }
+    .unveil-links a.secondary:hover { border-color: var(--teal); color: var(--teal); }
+
+    /* ABOUT */
+    .about-bg { background: var(--gray-light); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .about-grid p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+    .about-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .about-badge {
+      background: var(--white); border: 1px solid var(--gray-mid);
+      border-radius: 8px; padding: 10px 16px;
+      font-size: 13px; font-weight: 600; color: var(--navy);
+    }
+    .about-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .about-stat-card {
+      background: var(--navy); border-radius: 12px;
+      padding: 20px; text-align: center;
+    }
+    .about-stat-card .num { font-size: 28px; font-weight: 800; color: var(--teal); }
+    .about-stat-card .lbl { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+
+    /* CONTACT */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .contact-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 24px; }
+    .contact-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .contact-item h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+    .contact-item p, .contact-item a { font-size: 14px; color: var(--text-muted); text-decoration: none; }
+    .contact-item a:hover { color: var(--teal); }
+    .social-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .social-links a {
+      background: var(--navy); color: var(--white);
+      padding: 8px 16px; border-radius: 20px;
+      font-size: 13px; font-weight: 600; text-decoration: none;
+      transition: background 0.15s;
+    }
+    .social-links a:hover { background: var(--teal); }
+    .contact-form-area {
+      background: var(--gray-light); border-radius: 14px;
+      padding: 28px; border: 1px solid var(--gray-mid);
+    }
+    .contact-form-area h3 { font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+    .form-row { margin-bottom: 14px; }
+    .form-row label { display: block; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 5px; }
+    .form-row input, .form-row select, .form-row textarea {
+      width: 100%; padding: 10px 14px;
+      border: 1px solid var(--gray-mid); border-radius: 8px;
+      font-family: var(--font); font-size: 14px;
+      background: var(--white); color: var(--text);
+      transition: border-color 0.15s;
+    }
+    .form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+      outline: none; border-color: var(--teal);
+    }
+    .form-row textarea { resize: vertical; min-height: 100px; }
+    .form-submit {
+      width: 100%; background: var(--teal); color: var(--white);
+      border: none; padding: 13px; border-radius: 8px;
+      font-size: 15px; font-weight: 700; cursor: pointer;
+      font-family: var(--font); transition: background 0.15s;
+    }
+    .form-submit:hover { background: var(--teal-dark); }
+
+    /* FOOTER */
+    footer { background: var(--navy); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1000px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-brand .logo { color: var(--white); font-size: 20px; font-weight: 800; margin-bottom: 12px; display: block; }
+    .footer-brand .logo span { color: var(--teal); }
+    .footer-brand p { color: #64748b; font-size: 13px; line-height: 1.7; max-width: 260px; }
+    .footer-col h4 { color: var(--white); font-size: 13px; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.5px; }
+    .footer-col a { display: block; color: #64748b; font-size: 13px; text-decoration: none; margin-bottom: 8px; transition: color 0.15s; }
+    .footer-col a:hover { color: var(--teal); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { color: #475569; font-size: 12px; }
+    .footer-bottom a { color: #475569; text-decoration: none; }
+    .footer-bottom a:hover { color: var(--teal); }
+
+    @media (max-width: 768px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .unveil-banner { padding: 32px 24px; }
+      section { padding: 48px 16px; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .about-stat-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">ERGO<span>.</span>HealthTech</a>
+  <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="products.html">Products</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="unveil/index.html" class="nav-unveil">UNVEIL</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Support</a>
+    <a href="https://shop.ergo-healthtech.com" target="_blank" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">222nm Far-UVC Technology — HKSTP, Hong Kong</div>
+  <h1>The Invisible Shield.<br/>The <span>Active Defense</span>.</h1>
+  <p>ERGO HealthTech delivers 222nm Far-UVC germicidal solutions for every human-occupied space. Safe for continuous human exposure. Proven by peer-reviewed science.</p>
+  <div class="hero-ctas">
+    <a href="products.html" class="btn-primary">Explore Products</a>
+    <a href="unveil/science.html" class="btn-secondary">Unveil the Science</a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">99.9%</div>
+      <div class="stat-label">Coronavirus Inactivation</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">&lt;1 sec</div>
+      <div class="stat-label">COVID-19 Neutralization</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Customizable SKUs</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Pathogens Inactivated</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24/7</div>
+      <div class="stat-label">Safe in Occupied Rooms</div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="section-inner">
+    <div class="section-tag">The Technology</div>
+    <h2 class="section-title">How 222nm Far-UVC Works</h2>
+    <p class="section-sub">Three reasons why 222nm Far-UVC is the most significant breakthrough in indoor air safety in a generation.</p>
+    <div class="how-grid">
+      <div class="how-card">
+        <span class="how-icon">🦠</span>
+        <h3>Destroys Airborne Pathogens</h3>
+        <p>222nm photons shatter the protein shell and RNA of viruses and bacteria floating in the air — including COVID-19, influenza, and MRSA — in under seconds.</p>
+      </div>
+      <div class="how-card">
+        <span class="how-icon">🛡️</span>
+        <h3>Safe for Human Exposure</h3>
+        <p>Unlike traditional 254nm UV, 222nm light is entirely absorbed by the dead outer layer of skin and the eye's tear film. It cannot reach living cells. Runs safely 24/7 with people present.</p>
+      </div>
+      <div class="how-card">
+        <span class="how-icon">⚡</span>
+        <h3>Mutation-Proof Defense</h3>
+        <p>222nm Far-UVC attacks the fundamental physical structure of every virus — not surface proteins. No matter how a virus mutates, it cannot develop resistance to physics.</p>
+      </div>
+      <div class="how-card">
+        <span class="how-icon">🔬</span>
+        <h3>Peer-Reviewed & Proven</h3>
+        <p>Validated by Columbia University, University of Hong Kong, HKUST, and leading global research institutions. Endorsed in a WHO webinar. Deployed across Hong Kong hospitals, airports, and schools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-bg">
+  <div class="section-inner">
+    <div class="section-tag">Our Products</div>
+    <h2 class="section-title">The ERGOSHIELD Product Range</h2>
+    <p class="section-sub">Over 20 customizable SKUs across portable, spatial, and enterprise germicidal solutions. Every product built around 222nm Far-UVC or complementary disinfection science.</p>
+    <div class="products-grid">
+      <div class="product-card">
+        <span class="product-tag">Portable — Personal Protection</span>
+        <h3>X ONE <span class="badge-oos">Coming Soon</span></h3>
+        <p>The world's smallest portable 222nm Far-UVC sterilizer. 40% smaller than a smartphone. Creates a 1m personal protection zone. Inactivates COVID-19 in under 1 second.</p>
+        <a href="https://shop.ergo-healthtech.com" class="product-link" target="_blank">View Product →</a>
+      </div>
+      <div class="product-card">
+        <span class="product-tag">Spatial — Room Disinfection</span>
+        <h3>ERGO222 M1</h3>
+        <p>Far-UVC germicidal lamp covering up to 200 ft². Ceiling-mountable. Ideal for restaurants, classrooms, exhibitions, and company entrances.</p>
+        <a href="https://shop.ergo-healthtech.com" class="product-link" target="_blank">View Product →</a>
+      </div>
+      <div class="product-card">
+        <span class="product-tag">Spatial — High Power</span>
+        <h3>ERGO222 M1 Pro</h3>
+        <p>High-power Far-UVC germicidal lamp with up to 400 ft² coverage. Built for clinics, metro stations, hotel lobbies, and shopping centres.</p>
+        <a href="https://shop.ergo-healthtech.com" class="product-link" target="_blank">View Product →</a>
+      </div>
+      <div class="product-card">
+        <span class="product-tag">Entrance — Full Body</span>
+        <h3>ERGOGate</h3>
+        <p>Full-body germicidal gate for rapid disinfection at building entrances. Deployed at hotels, airports, immigration, and schools.</p>
+        <a href="https://shop.ergo-healthtech.com" class="product-link" target="_blank">View Product →</a>
+      </div>
+      <div class="product-card">
+        <span class="product-tag">Air Quality — In-Vehicle</span>
+        <h3>AIRIE <span class="badge-oos">Coming Soon</span></h3>
+        <p>Portable enclosed UVC air purifier for in-car use. H13 HEPA, activated carbon, TiO₂ photocatalyst, and true 254nm germicidal light. Captures 99.97% of airborne particles.</p>
+        <a href="https://shop.ergo-healthtech.com" class="product-link" target="_blank">View Product →</a>
+      </div>
+      <div class="product-card">
+        <span class="product-tag">Disinfection — Chemical</span>
+        <h3>ecodis</h3>
+        <p>Germany's No. 1 certified active chlorine disinfectant. Non-toxic, non-flammable. IHO-certified. Eliminates 99.99% of germs including COVID-19, MRSA, and Influenza.</p>
+        <a href="https://shop.ergo-healthtech.com" class="product-link" target="_blank">Shop Now →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section>
+  <div class="section-inner">
+    <div class="section-tag">Who We Serve</div>
+    <h2 class="section-title">Solutions for Every Human-Occupied Space</h2>
+    <p class="section-sub">ERGO HealthTech serves B2B, B2B2C, and B2C across every sector where people gather indoors. If people breathe there, our technology protects them.</p>
+    <div class="solutions-grid">
+      <div class="solution-card b2b">
+        <span class="s-type">B2B — Enterprise</span>
+        <h3>Business & Institutional</h3>
+        <p>Full-scale germicidal deployment for organisations managing occupant health across multiple spaces and high-footfall environments.</p>
+        <ul>
+          <li>Hospitals & clinics</li>
+          <li>Hotels & hospitality</li>
+          <li>Airports & transport hubs</li>
+          <li>Schools & universities</li>
+          <li>Government & public facilities</li>
+          <li>Office buildings & commercial spaces</li>
+        </ul>
+      </div>
+      <div class="solution-card b2b2c">
+        <span class="s-type">B2B2C — Distribution</span>
+        <h3>Distributors & Resellers</h3>
+        <p>Global distributor programme with customizable SKUs, co-branding support, and a structured partnership framework reviewed within 1–2 weeks.</p>
+        <ul>
+          <li>Global distribution network</li>
+          <li>20+ customizable SKUs</li>
+          <li>OEM & co-branding options</li>
+          <li>Technical support & training</li>
+          <li>Marketing & science collateral</li>
+          <li>Apply at ergo-healthtech.com/apply-distributor</li>
+        </ul>
+      </div>
+      <div class="solution-card b2c">
+        <span class="s-type">B2C — Consumer</span>
+        <h3>Personal & Home Protection</h3>
+        <p>Portable and home-use germicidal solutions for individuals who want active protection wherever they go — travel, commute, home, and family spaces.</p>
+        <ul>
+          <li>X ONE personal sterilizer</li>
+          <li>ecodis disinfection spray</li>
+          <li>AIRIE in-car air purifier</li>
+          <li>Loyalty rewards programme</li>
+          <li>Instalment payment options</li>
+          <li>Smart Traveller partnership</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNVEIL BANNER -->
+<section style="background: var(--teal-light); padding: 72px 24px;">
+  <div class="section-inner">
+    <div class="unveil-banner">
+      <div>
+        <h2><span>UNVEIL</span> — The Science Behind 222nm Far-UVC</h2>
+        <p>The world's first dual-version public science statement on 222nm Far-UVC. Written for everyone from primary school students to clinical researchers. Backed by 12 peer-reviewed studies.</p>
+        <div class="unveil-links">
+          <a href="unveil/science.html" class="primary">The Science Behind 222nm Far-UVC</a>
+          <a href="unveil/faq.html" class="secondary">Your Questions Answered</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-bg">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <div class="section-tag">About ERGO HealthTech</div>
+        <h2 class="section-title">Built at HKSTP. Trusted Globally.</h2>
+        <p>ERGO HealthTech Ltd. is headquartered at the Hong Kong Science and Technology Parks (HKSTP) in Sha Tin, Hong Kong. We are an all-rounded expert in human health protection, developing cutting-edge technology across automated spatial disinfection, Indoor Air Quality (IAQ) monitoring, and portable sterilization.</p>
+        <p>Our flagship product, the X ONE — the world's smallest portable 222nm Far-UVC sterilizer at the time of launch — won the Design Award 2022 and has been deployed across hospitals, airports, schools, and government facilities throughout Hong Kong and beyond.</p>
+        <p>Our technology was endorsed in a WHO webinar in December 2021, and is validated by leading institutions including Columbia University, The University of Hong Kong, HKUST, and City University of Hong Kong.</p>
+        <div class="about-badges">
+          <div class="about-badge">🏆 Design Award 2022</div>
+          <div class="about-badge">🔬 WHO Endorsed</div>
+          <div class="about-badge">🏥 HKSTP Based</div>
+          <div class="about-badge">🌍 Global Distribution</div>
+        </div>
+      </div>
+      <div>
+        <div class="about-stat-grid">
+          <div class="about-stat-card">
+            <div class="num">15+</div>
+            <div class="lbl">Pathogens Inactivated</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="num">20+</div>
+            <div class="lbl">Customizable SKUs</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="num">99.9%</div>
+            <div class="lbl">Coronavirus Clearance</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="num">24/7</div>
+            <div class="lbl">Safe Human Exposure</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <div class="section-inner">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Contact ERGO HealthTech</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>HKSTP Pak Shek Kok, Sha Tin, Hong Kong</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/85260876138">(852) 6087 6138</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:cs@ergo-healthtech.com">cs@ergo-healthtech.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/company/ergo-healthtech/" target="_blank">LinkedIn</a>
+              <a href="https://twitter.com/ERGO_HealthTech" target="_blank">Twitter/X</a>
+              <a href="https://www.instagram.com/ergo_healthtech/" target="_blank">Instagram</a>
+              <a href="https://www.facebook.com/ERGO.HT/" target="_blank">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-area">
+        <h3>Send an Enquiry</h3>
+        <form action="mailto:cs@ergo-healthtech.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Full name" required />
+          </div>
+          <div class="form-row">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-row">
+            <label>Enquiry Type</label>
+            <select name="type">
+              <option>Product Enquiry</option>
+              <option>Corporate Offer</option>
+              <option>Business Collaboration</option>
+              <option>Distributor Application</option>
+              <option>Technical Support</option>
+              <option>Investment</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us about your needs..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">ERGO<span style="color:var(--teal);">.</span>HealthTech</span>
+        <p>An all-rounded expert in human health protection. Headquartered at HKSTP, Hong Kong. Delivering 222nm Far-UVC germicidal solutions globally.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="products.html">X ONE</a>
+        <a href="products.html">ERGO222 M1</a>
+        <a href="products.html">ERGO222 M1 Pro</a>
+        <a href="products.html">ERGOGate</a>
+        <a href="products.html">AIRIE</a>
+        <a href="products.html">ecodis</a>
+      </div>
+      <div class="footer-col">
+        <h4>UNVEIL</h4>
+        <a href="unveil/science.html">The Science Behind 222nm</a>
+        <a href="unveil/faq.html">Your Questions Answered</a>
+        <a href="resources.html">Reports & Research</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About ERGO</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="https://shop.ergo-healthtech.com/apply-distributor" target="_blank">Become a Distributor</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:cs@ergo-healthtech.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ERGO HealthTech Ltd. All rights reserved.</p>
+      <p>
+        <a href="https://shop.ergo-healthtech.com/return-refund" target="_blank">Returns & Refunds</a> &nbsp;|&nbsp;
+        <a href="https://shop.ergo-healthtech.com/warranty" target="_blank">Warranty</a> &nbsp;|&nbsp;
+        <a href="llms.txt">llms.txt</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

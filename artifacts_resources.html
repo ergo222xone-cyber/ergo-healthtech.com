@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — Reports & Research | ERGO HealthTech</title>
+  <meta name="description" content="Peer-reviewed research, technical reports, and scientific references on 222nm Far-UVC safety and efficacy. Curated by ERGO HealthTech." />
+  <link rel="canonical" href="https://www.ergo-healthtech.com/resources" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0A1628; --teal: #00B4C6; --teal-dark: #008fa0;
+      --white: #ffffff; --gray-light: #f5f7fa; --gray-mid: #e2e8f0;
+      --text: #1a202c; --text-muted: #4a5568;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 16px rgba(0,0,0,0.3); }
+    .nav-logo { color: var(--white); font-size: 18px; font-weight: 800; text-decoration: none; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 8px 12px; border-radius: 6px; transition: all 0.15s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); background: rgba(255,255,255,0.1); }
+    .nav-links .nav-unveil { color: var(--teal); font-weight: 700; border: 1px solid rgba(0,180,198,0.3); }
+    .nav-links .nav-cta { background: var(--teal); color: var(--white) !important; border-radius: 20px !important; padding: 8px 18px !important; font-weight: 700 !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); margin: 5px 0; border-radius: 2px; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 16px; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: block; }
+    }
+    .page-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .page-hero .tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: block; }
+    .page-hero h1 { color: var(--white); font-size: clamp(24px, 4vw, 40px); font-weight: 800; margin-bottom: 12px; }
+    .page-hero p { color: #94a3b8; font-size: 16px; max-width: 560px; margin: 0 auto; }
+    .content { max-width: 860px; margin: 0 auto; padding: 64px 24px 80px; }
+    .section-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 20px; margin-top: 48px; display: block; padding-bottom: 10px; border-bottom: 1px solid var(--gray-mid); }
+    .section-label:first-child { margin-top: 0; }
+    .ref-card { background: var(--white); border: 1px solid var(--gray-mid); border-radius: 12px; padding: 20px 22px; margin-bottom: 14px; transition: box-shadow 0.15s; }
+    .ref-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .ref-card .ref-type { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+    .ref-card h3 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 6px; line-height: 1.4; }
+    .ref-card .ref-authors { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+    .ref-card .ref-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .ref-link { font-size: 12px; font-weight: 700; color: var(--teal); text-decoration: none; background: var(--teal-light); padding: 4px 12px; border-radius: 12px; transition: all 0.15s; }
+    .ref-link:hover { background: var(--teal); color: var(--white); }
+    .unveil-promo { background: var(--navy); border-radius: 16px; padding: 32px; margin-top: 48px; text-align: center; }
+    .unveil-promo h3 { color: var(--white); font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+    .unveil-promo p { color: #94a3b8; font-size: 14px; margin-bottom: 20px; }
+    .unveil-promo a { display: inline-block; background: var(--teal); color: var(--white); padding: 12px 28px; border-radius: 24px; font-size: 14px; font-weight: 700; text-decoration: none; margin: 0 6px; }
+    footer { background: var(--navy); padding: 32px 24px; text-align: center; }
+    footer p { color: #475569; font-size: 13px; }
+    footer a { color: var(--teal); text-decoration: none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">ERGO<span>.</span>HealthTech</a>
+  <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="products.html">Products</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="unveil/index.html" class="nav-unveil">UNVEIL</a>
+    <a href="resources.html" class="active">Resources</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Support</a>
+    <a href="https://shop.ergo-healthtech.com" target="_blank" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="tag">Reports & Research</span>
+  <h1>The Science That Backs Every Claim</h1>
+  <p>Peer-reviewed literature, safety guidelines, and public health data underpinning ERGO HealthTech's 222nm Far-UVC technology.</p>
+</div>
+
+<div class="content">
+
+  <span class="section-label">Efficacy — Virus Inactivation</span>
+
+  <div class="ref-card">
+    <div class="ref-type">Scientific Reports — Landmark Study</div>
+    <h3>Far-UVC light (222nm) efficiently and safely inactivates airborne human coronaviruses</h3>
+    <div class="ref-authors">Buonanno, M. et al. (2020). Scientific Reports, 10, 10285.</div>
+    <div class="ref-links">
+      <a href="https://doi.org/10.1038/s41598-020-67211-2" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <div class="ref-card">
+    <div class="ref-type">Scientific Reports — Landmark Study</div>
+    <h3>Far-UVC light: A new tool to control the spread of airborne-mediated microbial diseases</h3>
+    <div class="ref-authors">Welch, D. et al. (2018). Scientific Reports, 8, 2752.</div>
+    <div class="ref-links">
+      <a href="https://doi.org/10.1038/s41598-018-21058-w" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <div class="ref-card">
+    <div class="ref-type">Scientific Reports — Real-World Trial</div>
+    <h3>222nm far-UVC light markedly reduces the level of infectious airborne virus in an occupied room</h3>
+    <div class="ref-authors">Scientific Reports (2024).</div>
+    <div class="ref-links">
+      <a href="https://doi.org/10.1038/s41598-024-59886-4" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <div class="ref-card">
+    <div class="ref-type">Environmental Science & Technology — SARS-CoV-2</div>
+    <h3>The Susceptibility of Airborne SARS-CoV-2 to Far-UVC Irradiation</h3>
+    <div class="ref-authors">Angel, D.M., Luhung, I., de Sá, K.S.G., & Peccia, J. (2025). Environmental Science & Technology.</div>
+    <div class="ref-links">
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40970481/" class="ref-link" target="_blank">PubMed →</a>
+      <a href="https://pubs.acs.org/esthag/article-abstract/59/38/20526/3812648/" class="ref-link" target="_blank">Full Text →</a>
+    </div>
+  </div>
+
+  <div class="ref-card">
+    <div class="ref-type">Chinese Journal of Disinfection</div>
+    <h3>222nm 紫外線消毒的有效性與安全性研究 (222nm UV Disinfection Effectiveness & Safety)</h3>
+    <div class="ref-authors">張沖, 張雪, 沙斯爍, 等. (2025). 中國消毒學雜誌, 42(6), 401–404.</div>
+    <div class="ref-links">
+      <a href="https://manu63.magtech.com.cn/zgxdx/CN/10.11726/j.issn.1001-7658.2025.06.001" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <span class="section-label">Safety — Human Exposure</span>
+
+  <div class="ref-card">
+    <div class="ref-type">Scientific Reports — Ocular Safety</div>
+    <h3>Corneal safety assessment of germicidal far UV-C radiation</h3>
+    <div class="ref-authors">Scientific Reports (2025).</div>
+    <div class="ref-links">
+      <a href="https://doi.org/10.1038/s41598-025-87318-y" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <div class="ref-card">
+    <div class="ref-type">Scientific Reports — 36-Month Clinical Study</div>
+    <h3>Ocular safety of 222nm far-ultraviolet-c full-room germicidal irradiation: A 36-month clinical observation</h3>
+    <div class="ref-authors">Scientific Reports (2024).</div>
+    <div class="ref-links">
+      <a href="https://doi.org/10.1038/s41598-024-59120-1" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <div class="ref-card">
+    <div class="ref-type">Photochemistry and Photobiology — Dermal Safety</div>
+    <h3>222nm far-UVC light and skin health: Assessment of DNA damage across different skin types</h3>
+    <div class="ref-authors">Photochemistry and Photobiology (2025).</div>
+    <div class="ref-links">
+      <a href="https://doi.org/10.1111/php.13900" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <span class="section-label">Virology — Defective Interfering Particles</span>
+
+  <div class="ref-card">
+    <div class="ref-type">Communications Biology</div>
+    <h3>Defective interfering particles arise during virus propagation, conditional on parental virus for replication and packaging</h3>
+    <div class="ref-authors">Communications Biology (2022).</div>
+    <div class="ref-links">
+      <a href="https://doi.org/10.1038/s42003-022-03866-x" class="ref-link" target="_blank">Read Paper →</a>
+    </div>
+  </div>
+
+  <span class="section-label">Public Health Data — Hong Kong</span>
+
+  <div class="ref-card">
+    <div class="ref-type">Centre for Health Protection — Hong Kong</div>
+    <h3>Statistical Data on Vaccination Programmes — Seasonal Influenza & COVID-19</h3>
+    <div class="ref-authors">Centre for Health Protection, Hong Kong (2025/26).</div>
+    <div class="ref-links">
+      <a href="https://www.chp.gov.hk/en/static/51645.html" class="ref-link" target="_blank">CHP Data →</a>
+    </div>
+  </div>
+
+  <div class="ref-card">
+    <div class="ref-type">U.S. CDC — Vaccine Efficacy</div>
+    <h3>Interim Estimates of 2025–26 Seasonal Influenza Vaccine Effectiveness — United States</h3>
+    <div class="ref-authors">CDC. MMWR, March 12, 2026.</div>
+    <div class="ref-links">
+      <a href="https://www.cdc.gov/mmwr/volumes/75/wr/mm7510a4.htm" class="ref-link" target="_blank">Read Report →</a>
+    </div>
+  </div>
+
+  <div class="unveil-promo">
+    <h3>Want the science explained in plain terms?</h3>
+    <p>Read the world's first dual-version public science statement on 222nm Far-UVC — written for everyone from primary school students to clinical researchers.</p>
+    <a href="unveil/science.html">The Science Behind 222nm Far-UVC</a>
+    <a href="unveil/faq.html" style="background:transparent; border: 1px solid rgba(255,255,255,0.3);">19 Questions Answered</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="index.html">ERGO HealthTech Ltd.</a> &nbsp;|&nbsp;
+  <a href="unveil/index.html">UNVEIL</a> &nbsp;|&nbsp;
+  <a href="mailto:cs@ergo-healthtech.com">cs@ergo-healthtech.com</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About ERGO HealthTech | Hong Kong 222nm Far-UVC Pioneer</title>
+  <meta name="description" content="ERGO HealthTech Ltd. is headquartered at HKSTP, Hong Kong. WHO-endorsed, Design Award 2022 winner, validated by Columbia University, HKU, and HKUST." />
+  <link rel="canonical" href="https://www.ergo-healthtech.com/about" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0A1628; --teal: #00B4C6; --teal-dark: #008fa0;
+      --white: #ffffff; --gray-light: #f5f7fa; --gray-mid: #e2e8f0;
+      --text: #1a202c; --text-muted: #4a5568;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body { font-family: var(--font); color: var(--text); background: var(--white); line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 16px rgba(0,0,0,0.3); }
+    .nav-logo { color: var(--white); font-size: 18px; font-weight: 800; text-decoration: none; }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; font-weight: 600; padding: 8px 12px; border-radius: 6px; transition: all 0.15s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); background: rgba(255,255,255,0.1); }
+    .nav-links .nav-unveil { color: var(--teal); font-weight: 700; border: 1px solid rgba(0,180,198,0.3); }
+    .nav-links .nav-cta { background: var(--teal); color: var(--white) !important; border-radius: 20px !important; padding: 8px 18px !important; font-weight: 700 !important; }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--white); margin: 5px 0; border-radius: 2px; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; padding: 16px; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
+      .nav-links.open { display: flex; }
+      .nav-hamburger { display: block; }
+    }
+    .page-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .page-hero .tag { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: block; }
+    .page-hero h1 { color: var(--white); font-size: clamp(24px, 4vw, 40px); font-weight: 800; margin-bottom: 12px; }
+    .page-hero p { color: #94a3b8; font-size: 16px; max-width: 560px; margin: 0 auto; }
+    .content { max-width: 860px; margin: 0 auto; padding: 64px 24px 80px; }
+    h2 { font-size: clamp(20px, 3vw, 28px); font-weight: 800; color: var(--navy); margin: 48px 0 16px; padding-bottom: 10px; border-bottom: 2px solid var(--teal); }
+    h2:first-child { margin-top: 0; }
+    p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+    .awards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0; }
+    .award-card { background: var(--navy); border-radius: 12px; padding: 20px; text-align: center; }
+    .award-card .icon { font-size: 32px; margin-bottom: 10px; display: block; }
+    .award-card h4 { color: var(--teal); font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+    .award-card p { color: #94a3b8; font-size: 13px; margin: 0; }
+    .institutions { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+    .institution-tag { background: var(--gray-light); border: 1px solid var(--gray-mid); border-radius: 8px; padding: 10px 16px; font-size: 13px; font-weight: 600; color: var(--navy); }
+    .timeline { margin: 24px 0; }
+    .timeline-item { display: flex; gap: 20px; margin-bottom: 24px; }
+    .timeline-year { background: var(--teal); color: var(--white); font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 12px; flex-shrink: 0; height: fit-content; margin-top: 2px; }
+    .timeline-content h4 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .timeline-content p { font-size: 14px; margin: 0; }
+    footer { background: var(--navy); padding: 32px 24px; text-align: center; }
+    footer p { color: #475569; font-size: 13px; }
+    footer a { color: var(--teal); text-decoration: none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html">ERGO<span>.</span>HealthTech</a>
+  <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="products.html">Products</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="unveil/index.html" class="nav-unveil">UNVEIL</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html" class="active">About</a>
+    <a href="support.html">Support</a>
+    <a href="https://shop.ergo-healthtech.com" target="_blank" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="tag">About ERGO HealthTech Ltd.</span>
+  <h1>Built at HKSTP. Trusted Globally.</h1>
+  <p>An all-rounded expert in human health protection, pioneering 222nm Far-UVC germicidal solutions from Hong Kong to the world.</p>
+</div>
+
+<div class="content">
+
+  <h2>Who We Are</h2>
+  <p>ERGO HealthTech Ltd. is headquartered at the Hong Kong Science and Technology Parks (HKSTP) in Pak Shek Kok, Sha Tin, Hong Kong. We are an all-rounded expert in human health protection, developing cutting-edge technology across automated spatial disinfection, Indoor Air Quality (IAQ) monitoring and management, and portable sterilization solutions.</p>
+  <p>Our mission is simple: to make every human-occupied space actively safer. Not passively safer — actively. We deploy 222nm Far-UVC germicidal technology that continuously neutralizes airborne pathogens while people are present, 24 hours a day, 7 days a week.</p>
+
+  <h2>Recognition & Validation</h2>
+  <div class="awards-grid">
+    <div class="award-card">
+      <span class="icon">🏆</span>
+      <h4>Design Award 2022</h4>
+      <p>X ONE — world's smallest portable 222nm Far-UVC sterilizer at time of launch</p>
+    </div>
+    <div class="award-card">
+      <span class="icon">🌍</span>
+      <h4>WHO Endorsed</h4>
+      <p>222nm Far-UVC technology endorsed in a WHO webinar, December 2021</p>
+    </div>
+    <div class="award-card">
+      <span class="icon">🔬</span>
+      <h4>Peer-Reviewed Science</h4>
+      <p>Validated by 12+ peer-reviewed studies from global research institutions</p>
+    </div>
+    <div class="award-card">
+      <span class="icon">🏥</span>
+      <h4>Deployed in HK Hospitals</h4>
+      <p>Active across Hospital Authority networks, TWGHs, and Po Leung Kuk facilities</p>
+    </div>
+  </div>
+
+  <h2>Research Partners & Validating Institutions</h2>
+  <p>Our technology is validated by the world's leading research institutions in photobiology, virology, and public health:</p>
+  <div class="institutions">
+    <div class="institution-tag">Columbia University</div>
+    <div class="institution-tag">University of Hong Kong (HKU)</div>
+    <div class="institution-tag">HKUST</div>
+    <div class="institution-tag">City University of Hong Kong (CityU)</div>
+    <div class="institution-tag">University of St Andrews</div>
+    <div class="institution-tag">World Health Organization (WHO)</div>
+    <div class="institution-tag">ACGIH</div>
+  </div>
+
+  <h2>Our Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-year">2020</span>
+      <div class="timeline-content">
+        <h4>EMSD Launches 222nm Lift Sterilization</h4>
+        <p>Hong Kong's Electrical and Mechanical Services Department deploys 222nm Far-UVC lift sterilization frameworks — one of the earliest government adoptions globally.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">2021</span>
+      <div class="timeline-content">
+        <h4>WHO Endorsement</h4>
+        <p>222nm Far-UVC technology endorsed in a WHO webinar in December 2021, establishing global scientific credibility for the wavelength.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">2022</span>
+      <div class="timeline-content">
+        <h4>X ONE Wins Design Award</h4>
+        <p>ERGO HealthTech's X ONE — the world's smallest portable 222nm Far-UVC sterilizer at launch — wins the Design Award 2022.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">2024</span>
+      <div class="timeline-content">
+        <h4>222DAY — Hong Kong's First 222nm Industry Event</h4>
+        <p>ERGO HealthTech organises 222DAY, Hong Kong's first dedicated 222nm Far-UVC industry event, bringing together researchers, healthcare professionals, and building managers.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">2026</span>
+      <div class="timeline-content">
+        <h4>UNVEIL — World's First Dual-Version Science Statement</h4>
+        <p>ERGO HealthTech publishes the world's first dual-version public science statement on 222nm Far-UVC — written for everyone from primary school students to clinical researchers.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Headquarters</h2>
+  <p>ERGO HealthTech Ltd.<br/>HKSTP Pak Shek Kok, Sha Tin, Hong Kong<br/>Email: <a href="mailto:cs@ergo-healthtech.com" style="color:var(--teal);">cs@ergo-healthtech.com</a><br/>WhatsApp: <a href="https://wa.me/85260876138" style="color:var(--teal);">+852 6087 6138</a></p>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="index.html">ERGO HealthTech Ltd.</a> &nbsp;|&nbsp;
+  <a href="products.html">Products</a> &nbsp;|&nbsp;
+  <a href="unveil/index.html">UNVEIL</a> &nbsp;|&nbsp;
+  <a href="mailto:cs@ergo-healthtech.com">cs@ergo-healthtech.com</a></p>
+</footer>
+</body>
+</html>

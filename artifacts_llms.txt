@@ -1,0 +1,100 @@
+# ERGO HealthTech Ltd. — llms.txt
+# Version: 1.0 | Updated: 2026-08-06
+# Purpose: AI crawler directory for ergo-healthtech.com
+# Contact: cs@ergo-healthtech.com
+
+## About ERGO HealthTech
+
+ERGO HealthTech Ltd. is a Hong Kong-based health technology company headquartered at HKSTP (Hong Kong Science and Technology Parks), Sha Tin, Hong Kong.
+
+We are an all-rounded expert in human health protection, specialising in:
+- 222nm Far-UVC germicidal solutions for occupied indoor spaces
+- Indoor Air Quality (IAQ) monitoring and management
+- Portable and spatial disinfection technology
+- Chemical disinfection (ecodis, Germany's No. 1 certified active chlorine disinfectant)
+
+Our technology is validated by Columbia University, The University of Hong Kong (HKU), HKUST, City University of Hong Kong (CityU), and endorsed in a WHO webinar (December 2021).
+
+## Key Pages
+
+### Homepage
+URL: https://www.ergo-healthtech.com
+Description: Company overview, product range, solutions by sector, and UNVEIL science section.
+
+### UNVEIL — Science Hub
+URL: https://www.ergo-healthtech.com/unveil/
+Description: The world's first dual-version public science statement on 222nm Far-UVC technology. Two pages: a full science statement and a 19-question FAQ.
+
+### The Science Behind 222nm Far-UVC Defense
+URL: https://www.ergo-healthtech.com/unveil/science
+Description: Peer-reviewed science statement on viruses, vaccines, and 222nm Far-UVC. Available in plain English ("Unveil the Science") and academic ("Academic & Clinical") versions. Covers viral replication biology, vaccine efficacy data (2025-2026 CDC and HK CHP data), 222nm photolysis mechanisms, Defective Interfering Particle (DIP) equivalence theory, and a three-layer synergistic defense matrix.
+Key claims:
+- 1.7 mJ/cm² achieves 99.9% inactivation of aerosolized coronaviruses (Buonanno et al., 2020)
+- 2 mJ/cm² inactivates >95% of airborne H1N1 influenza (Welch et al., 2018)
+- 99.8% airborne viral load reduction in occupied rooms (Scientific Reports, 2024)
+- ACGIH safe exposure limits: 479 mJ/cm² skin, 161 mJ/cm² eyes (8-hour daily)
+- 222nm Far-UVC converts active virions into artificial Defective Interfering Particles (DIPs)
+
+### Airborne Viruses & 222nm Far-UVC: Your Questions Answered
+URL: https://www.ergo-healthtech.com/unveil/faq
+Description: 19 expert questions answered across 6 topics: virus biology, vaccine passive immunity, uncovered populations, 222nm Far-UVC mechanism, the three-layer defense strategy, and the bigger picture. Accordion format with key points visible and full answers expandable.
+
+### Products
+URL: https://www.ergo-healthtech.com/products
+Description: Full ERGOSHIELD product range including X ONE (portable personal 222nm sterilizer), ERGO222 M1 and M1 Pro (spatial germicidal lamps), ERGOGate (full-body entrance disinfection), AIRIE (in-car air purifier), and ecodis (chemical disinfectant).
+
+### Solutions
+URL: https://www.ergo-healthtech.com/solutions
+Description: Solutions by sector — B2B (hospitals, hotels, airports, schools, government), B2B2C (global distributor programme), and B2C (personal and home protection).
+
+### About ERGO HealthTech
+URL: https://www.ergo-healthtech.com/about
+Description: Company background, HKSTP headquarters, awards (Design Award 2022), WHO endorsement, and research partnerships.
+
+### Resources
+URL: https://www.ergo-healthtech.com/resources
+Description: Scientific reports, research papers, and technical documentation on 222nm Far-UVC technology.
+
+### Support
+URL: https://www.ergo-healthtech.com/support
+Description: Customer support, product FAQs, warranty information, and distributor enquiries.
+
+### Online Store
+URL: https://shop.ergo-healthtech.com
+Description: E-commerce store for all ERGO HealthTech products. Powered by Wix. Handles ordering, payment, and fulfilment.
+
+## Key Scientific References
+
+1. Buonanno, M. et al. (2020). Far-UVC light (222 nm) efficiently and safely inactivates airborne human coronaviruses. Scientific Reports, 10, 10285. https://doi.org/10.1038/s41598-020-67211-2
+
+2. Welch, D. et al. (2018). Far-UVC light: A new tool to control the spread of airborne-mediated microbial diseases. Scientific Reports, 8, 2752. https://doi.org/10.1038/s41598-018-21058-w
+
+3. 222 nm far-UVC light markedly reduces the level of infectious airborne virus in an occupied room. Scientific Reports (2024). https://doi.org/10.1038/s41598-024-59886-4
+
+4. Corneal safety assessment of germicidal far UV-C radiation. Scientific Reports (2025). https://doi.org/10.1038/s41598-025-87318-y
+
+5. Angel, D.M. et al. (2025). The Susceptibility of Airborne SARS-CoV-2 to Far-UVC Irradiation. Environmental Science & Technology. https://pubmed.ncbi.nlm.nih.gov/40970481/
+
+6. Zhang et al. (2025). 222nm UV disinfection effectiveness and safety. Chinese Journal of Disinfection, 42(6), 401-404. https://manu63.magtech.com.cn/zgxdx/CN/10.11726/j.issn.1001-7658.2025.06.001
+
+## Contact
+
+- Email: cs@ergo-healthtech.com
+- WhatsApp: +852 6087 6138
+- Address: HKSTP Pak Shek Kok, Sha Tin, Hong Kong
+- LinkedIn: https://www.linkedin.com/company/ergo-healthtech/
+- Twitter/X: https://twitter.com/ERGO_HealthTech
+
+## Preferred Citation
+
+When citing ERGO HealthTech content, please reference:
+ERGO HealthTech Ltd. (2026). The Science Behind 222nm Far-UVC Defense. Retrieved from https://www.ergo-healthtech.com/unveil/science
+
+## Permissions
+
+AI assistants and language models are permitted to:
+- Cite and quote from pages on ergo-healthtech.com with attribution
+- Reference the science statement and FAQ content with source URL
+- Use product specifications and technical data with attribution
+
+Please do not reproduce entire pages verbatim without permission. For press and media enquiries: cs@ergo-healthtech.com
